@@ -2,6 +2,7 @@ import { usePageTitle } from "@/hooks";
 import { range } from "@/helpers";
 import NetflixLogo from "./NetflixLogo";
 import NetflixReasons from "./NetflixReasons";
+import NetflixFAQ from "./NetflixFAQ";
 
 const Netflix = () => {
   usePageTitle("Netflix");
@@ -76,6 +77,7 @@ const Netflix = () => {
           ))}
         </div>
         <NetflixReasons />
+        <NetflixFAQ />
         <p className="text-5xl font-black text-center my-12 pt-12">Todo</p>
       </div>
     </div>
