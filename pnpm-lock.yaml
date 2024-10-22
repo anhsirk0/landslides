@@ -29,15 +29,6 @@ importers:
       tailwind-merge:
         specifier: ^2.5.2
         version: 2.5.2
-      vite-plugin-checker:
-        specifier: ^0.7.2
-        version: 0.7.2(eslint@9.9.0(jiti@1.21.6))(optionator@0.9.4)(typescript@5.5.4)(vite@5.4.1)
-      vite-plugin-eslint:
-        specifier: ^1.8.1
-        version: 1.8.1(eslint@9.9.0(jiti@1.21.6))(vite@5.4.1)
-      vite-tsconfig-paths:
-        specifier: ^5.0.1
-        version: 5.0.1(typescript@5.5.4)(vite@5.4.1)
     devDependencies:
       '@eslint/js':
         specifier: ^9.9.0
@@ -84,6 +75,15 @@ importers:
       vite:
         specifier: ^5.4.1
         version: 5.4.1
+      vite-plugin-checker:
+        specifier: ^0.7.2
+        version: 0.7.2(eslint@9.9.0(jiti@1.21.6))(optionator@0.9.4)(typescript@5.5.4)(vite@5.4.1)
+      vite-plugin-eslint:
+        specifier: ^1.8.1
+        version: 1.8.1(eslint@9.9.0(jiti@1.21.6))(vite@5.4.1)
+      vite-tsconfig-paths:
+        specifier: ^5.0.1
+        version: 5.0.1(typescript@5.5.4)(vite@5.4.1)
 
 packages:
 
