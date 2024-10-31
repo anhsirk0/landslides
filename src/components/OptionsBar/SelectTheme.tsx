@@ -1,12 +1,23 @@
+import { useEffect } from "react";
+
 // icons imports
 import { IconColorSwatch } from "@tabler/icons-react";
 
 // local imports
 import { themes } from "@/config";
-import { useTheme } from "@/hooks";
+
+const KEY = "landslide-theme";
+function applyTheme(theme: string) {
+  localStorage.setItem(KEY, theme);
+  const html = document.querySelector("html");
+  if (html) html.setAttribute("data-theme", theme);
+}
 
 const SelectTheme = () => {
-  const { applyTheme } = useTheme(true);
+  useEffect(() => {
+    applyTheme(localStorage.getItem(KEY) || "cupcake");
+  }, []);
+
   return (
     <div className="dropdown dropdown-top dropdown-end">
       <div
