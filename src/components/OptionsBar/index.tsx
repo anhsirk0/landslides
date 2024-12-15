@@ -24,7 +24,7 @@ const OptionsBar: FC = () => {
         onClick={() => setOpen(!open)}
         className={cn(
           "fixed rounded-btn bg-accent left-[50vw] h-10 w-10 rotate-45 transition-all ease-in-out duration-300 z-50 center",
-          open ? "bottom-10" : "-bottom-6",
+          open ? "bottom-10" : "-bottom-6"
         )}
       >
         {open && (
@@ -34,7 +34,7 @@ const OptionsBar: FC = () => {
       <div
         className={cn(
           "transition-all ease-in-out duration-300 fixed w-screen bg-accent",
-          open ? "bottom-0" : "-bottom-16",
+          open ? "bottom-0" : "-bottom-16"
         )}
       >
         <div className="w-full h-16 flex flex-row">
@@ -49,13 +49,13 @@ const OptionsBar: FC = () => {
               </Link>
             </div>
             <div className="navbar-end space-x-4">
-              <a
-                href="https://github.com/anhsirk0/landslides"
-                target="_blank"
-                className="btn btn-sm xxl:btn-md btn-primary option-btn xxl:text-xl"
-              >
-                Source Code
-              </a>
+              {/* <a
+                  href="https://github.com/anhsirk0/landslides"
+                  target="_blank"
+                  className="btn btn-sm xxl:btn-md btn-primary option-btn xxl:text-xl"
+                  >
+                  Source Code
+                  </a> */}
 
               <SelectTheme />
             </div>

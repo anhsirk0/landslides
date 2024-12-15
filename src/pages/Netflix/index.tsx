@@ -3,6 +3,7 @@ import { range } from "@/helpers";
 import NetflixLogo from "./NetflixLogo";
 import NetflixReasons from "./NetflixReasons";
 import NetflixFAQ from "./NetflixFAQ";
+import NetflixFooter from "./NetflixFooter";
 
 const Netflix = () => {
   usePageTitle("Netflix");
@@ -78,8 +79,21 @@ const Netflix = () => {
         </div>
         <NetflixReasons />
         <NetflixFAQ />
-        <p className="text-5xl font-black text-center my-12 pt-12">Todo</p>
+        <div className="flex flex-col gap-2 xxl:gap-4 mt-8 xxl:mt-12">
+          <p className="text-lg font-medium text-center">
+            Ready to watch? Enter your email to create or restart your
+            membership.
+          </p>
+          <div className="join grow lg:px-20 xxl:px-40">
+            <input
+              className="input input-bordered join-item grow"
+              placeholder="Email address"
+            />
+            <button className="btn btn-primary join-item">Subscribe</button>
+          </div>
+        </div>
       </div>
+      <NetflixFooter />
     </div>
   );
 };
