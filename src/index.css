@@ -2,8 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.center {
-  @apply flex items-center justify-center;
+@layer utilities {
+  .center {
+    @apply flex items-center justify-center;
+  }
 }
 
 .option-btn {
