@@ -9,7 +9,7 @@
 
 * Landslides
 #+ATTR_HTML: :width "200px" :center t
-[[/public/logo.png]]
+[[https://codeberg.org/anhsirk0/landslides/raw/branch/main/public/logo.png]]    
 ** About
 Collection of Landing pages redesigned using DaisyUI
 ** Installation
