@@ -1,0 +1,30 @@
+#+title:                 Landslides
+#+author:                Krishna (Anshirk0)
+#+email:                 krishna404@yandex.com
+#+language:              en
+
++ Git repo on Codeberg: <https://codeberg.org/anhsirk0/landslides>
+  - Mirrors:
+    + GitHub: <https://github.com/anhsirk0/landslides>
+
+* Landslides
+#+ATTR_HTML: :width "200px" :center t
+[[/public/logo.png]]
+** About
+Collection of Landing pages redesigned using DaisyUI
+** Installation
+*** Requirements
+|------------+---------|
+| Technology | Version |
+|------------+---------|
+| Node       | LTS     |
+| pnpm       | *       |
+|------------+---------|
+*** Setup
+#+BEGIN_SRC shell
+git clone https://codeberg.org/anhsirk0/landslides.git --depth=0
+cd landslides
+pnpm install
+pnpm run dev # vite server
+pnpm run res:dev # rescript server
+#+END_SRC
