@@ -38,7 +38,7 @@ let make = () => {
   let videos = Belt.Array.range(1, 12)->Array.map(idx => {
     <div
       key={idx->Int.toString}
-      className="col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 flex flex-col gap-3 rounded-box p-4 hover:bg-base-200 transitional">
+      className="col-span-12 md:col-span-6 lg:col-span-3 xl:col-span-3 flex flex-col gap-3 rounded-box p-3 xl:p-4 hover:bg-base-200 transitional">
       <img
         alt={"video-" ++ idx->Int.toString}
         width="auto"

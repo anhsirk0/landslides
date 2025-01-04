@@ -12,10 +12,6 @@
   @apply center h-screen w-screen min-h-0 transition-all;
 }
 
-.option-btn {
-  @apply border-2 border-primary-content hover:border-primary-content shadow-none;
-}
-
 .resp-title {
   @apply text-sm xl:text-base xxl:text-lg font-bold;
 }
@@ -38,4 +34,8 @@
 
 .netflix-rating {
   -webkit-text-stroke: 2px oklch(var(--nc));
+}
+
+.transitional {
+  @apply transition-all duration-300 ease-out;
 }

@@ -5,7 +5,7 @@ let make = () => {
     <Route.Link
       to=item.path
       key=item.path
-      className="col-span-12 md:col-span-6 xl:col-span-4 xxl:col-span-3 rounded-box overflow-hidden h-24 cursor-pointer">
+      className="col-span-12 md:col-span-4 xl:col-span-4 xxl:col-span-3 rounded-box overflow-hidden h-24 cursor-pointer">
       {item.card()}
     </Route.Link>
   })

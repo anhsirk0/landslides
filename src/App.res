@@ -10,6 +10,6 @@ let make = () => {
     | Youtube => <Youtube />
     | Home => <Home />
     }}
-    <OptionsBar />
+    <OptionsFab />
   </React.Fragment>
 }
