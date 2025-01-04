@@ -3,6 +3,7 @@ type t =
   | Netflix
   | Spotify
   | Twitter
+  | Youtube
 
 let useRoute: unit => t = () => {
   let url = RescriptReactRouter.useUrl()
@@ -11,6 +12,7 @@ let useRoute: unit => t = () => {
   | list{"netflix"} => Netflix
   | list{"spotify"} => Spotify
   | list{"twitter"} => Twitter
+  | list{"youtube"} => Youtube
   | _ => Home
   }
 }
@@ -36,5 +38,9 @@ let appRoutes: array<appRoute> = [
   {
     path: "/twitter",
     card: () => <TwitterCard />,
+  },
+  {
+    path: "/youtube",
+    card: () => <YoutubeCard />,
   },
 ]

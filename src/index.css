@@ -9,7 +9,7 @@
 }
 
 #root {
-  @apply center h-screen w-screen min-h-0 overflow-y-auto scroll-smooth transition-all;
+  @apply center h-screen w-screen min-h-0 transition-all;
 }
 
 .option-btn {
@@ -20,12 +20,20 @@
   @apply text-sm xl:text-base xxl:text-lg font-bold;
 }
 
-/* .resp-btn { */
-/*   @apply btn-xs xl:btn-sm xxl:btn-md; */
-/* } */
+.resp-text {
+  @apply text-sm md:text-base xxl:text-xl;
+}
+
+.resp-gap {
+  @apply gap-2 xxl:gap-4;
+}
+
+.resp-btn {
+  @apply btn-xs xl:btn-sm xxl:btn-md;
+}
 
 .resp-icon {
-  @apply size-4 lg:size-6 xxl:size-6;
+  @apply size-4 xxl:size-6;
 }
 
 .netflix-rating {

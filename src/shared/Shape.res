@@ -87,3 +87,20 @@ module Spotify = {
 
   let categories: array<string> = ["artists", "albums", "radio"]
 }
+
+module Youtube = {
+  type t = {title: string, icon: Icon.t}
+  let sidelinks: array<t> = [
+    {title: "Home", icon: Icon.house},
+    {title: "Shorts", icon: Icon.ytshorts},
+    {title: "Subscriptions", icon: Icon.ytsubscription},
+    // {title: "You", icon: Icon.userCircle},
+  ]
+  let youlinks: array<t> = [
+    {title: "History", icon: Icon.history},
+    {title: "Playlists", icon: Icon.playlist},
+    {title: "Your Videos", icon: Icon.video},
+    {title: "Watch later", icon: Icon.clock},
+    {title: "Liked Videos", icon: Icon.thumbsUp},
+  ]
+}

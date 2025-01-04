@@ -7,6 +7,7 @@ let make = () => {
     | Netflix => <Netflix />
     | Spotify => <Spotify />
     | Twitter => <Twitter />
+    | Youtube => <Youtube />
     | Home => <Home />
     }}
     <OptionsBar />
