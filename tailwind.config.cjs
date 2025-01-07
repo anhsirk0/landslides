@@ -22,9 +22,15 @@ module.exports = {
           "0%": { transform: "scale(0)" },
           "100%": { transform: "scale(1)" },
         },
+        appear: {
+          "0%": { opacity: "0" },
+          "30%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
       },
       animation: {
         grow: "grow 300ms ease-in-out",
+        appear: "appear 300ms ease-in-out",
       },
     },
   },
