@@ -52,7 +52,7 @@ let make = () => {
   })
 
   <div className="center flex-row gap-2 h-full w-full p-2">
-    <div className="flex flex-col gap-2 h-full min-w-[24rem] w-[30rem]">
+    <div className="flex flex-col gap-2 h-full w-[20rem] md:min-w-[24rem] md:w-[30rem]">
       <ul className="menu menu-sm xxl:menu-md rounded-box bg-base-200">
         {sidelinks->React.array}
       </ul>

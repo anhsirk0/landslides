@@ -8,9 +8,13 @@ let make = () => {
     </div>
     <div className="center lg:w-1/2 p-4">
       <div className="flex flex-col gap-8 lg:w-4/5">
-        <h1 className="text-7xl font-bold"> {"Happening now"->React.string} </h1>
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold">
+          {"Happening now"->React.string}
+        </h1>
         <div className="flex flex-col gap-2 self-start">
-          <p className="text-3xl font-bold my-4"> {"Join today."->React.string} </p>
+          <p className="text-xl md:text-2xl lg:text-3xl font-bold my-4">
+            {"Join today."->React.string}
+          </p>
           <button className="btn btn-neutral">
             <Icon.google className="resp-icon" />
             {"Sign up with Google"->React.string}
@@ -26,7 +30,7 @@ let make = () => {
             <br />
             {"including Cookie Use."->React.string}
           </p>
-          <p className="text-lg mt-20"> {"Already have an account?"->React.string} </p>
+          <p className="md:text-lg mt-20"> {"Already have an account?"->React.string} </p>
           <button className="btn btn-primary btn-outline"> {"Sign in"->React.string} </button>
         </div>
       </div>
