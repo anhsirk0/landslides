@@ -27,9 +27,9 @@ let make = () => {
       <div
         key={idx->Int.toString}
         className="flex flex-col rounded-box p-2 xxl:p-4 hover:bg-base-300 transition-all ease-in-out duration-300 gap-2 group">
-        <div className="relative">
+        <div className="relative [&>img]:bg-neutral">
           <img
-            alt={"artist-" ++ idx->Int.toString}
+            // alt={"artist-" ++ idx->Int.toString}
             width="300"
             height="300"
             className={cat == "artists" ? "rounded-full" : "rounded-box"}

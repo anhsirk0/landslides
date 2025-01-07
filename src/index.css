@@ -8,6 +8,10 @@
   }
 }
 
+html {
+  overflow-x: hidden;
+}
+
 #root {
   @apply center h-screen w-screen min-h-0 transition-all;
 }

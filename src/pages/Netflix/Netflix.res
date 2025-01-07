@@ -3,11 +3,15 @@ let make = () => {
   Hook.useDocTitle("Netflix")
 
   let trendings = Belt.Array.range(1, 9)->Array.map(idx => {
-    <div key={idx->Int.toString} className="carousel-item hover:scale-105 transition-all relative">
+    <div
+      key={idx->Int.toString}
+      className="carousel-item hover:scale-105 transition-all relative overflow-y-hidden">
       <img
-        alt={"movie-" ++ idx->Int.toString}
+        // alt={"movie-" ++ idx->Int.toString}
         src={`https://picsum.photos/seed/${(idx * 20)->Int.toString}/250/350`}
-        className="rounded-box"
+        width="250"
+        height="350"
+        className="rounded-box bg-base-200"
       />
       <p className="absolute text-9xl text-neutral font-black bottom-0 left-0 netflix-rating">
         {idx->Int.toString->React.string}

@@ -26,6 +26,7 @@ let make = () => {
                 <img
                   alt="user"
                   src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+                  className="bg-neutral"
                 />
               </div>
             </div>}
@@ -40,10 +41,10 @@ let make = () => {
       key={idx->Int.toString}
       className="col-span-12 md:col-span-6 lg:col-span-3 xl:col-span-3 flex flex-col gap-3 rounded-box p-3 xl:p-4 hover:bg-base-200 transitional">
       <img
-        alt={"video-" ++ idx->Int.toString}
-        width="auto"
+        // alt={"video-" ++ idx->Int.toString}
+        width="400"
         height="240"
-        className="rounded-box"
+        className="rounded-box bg-neutral"
         src={`https://picsum.photos/seed/${(idx * 10)->Int.toString}/400/240`}
       />
       <div className="flex gap-2 xxl:gap-4">
@@ -52,6 +53,7 @@ let make = () => {
             <img
               alt="user"
               src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+              className="bg-neutral"
             />
           </div>
         </div>
