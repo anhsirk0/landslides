@@ -20,8 +20,11 @@ let useRoute: unit => t = () => {
 module Link = {
   @react.component
   let make = (~to, ~className, ~children) => {
-    let onClick = _ => RescriptReactRouter.push(to)
-    <div className onClick> {children} </div>
+    let onClick = evt => {
+      evt->ReactEvent.Mouse.preventDefault
+      RescriptReactRouter.push(to)
+    }
+    <a href=to className onClick> {children} </a>
   }
 }
 
