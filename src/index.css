@@ -43,3 +43,7 @@ html {
 .transitional {
   @apply transition-all duration-300 ease-out;
 }
+
+.route-card {
+  @apply size-full center p-4 xxl:p-6 text-2xl md:text-3xl font-bold;
+}

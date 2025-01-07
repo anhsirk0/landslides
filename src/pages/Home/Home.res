@@ -5,7 +5,7 @@ let make = () => {
     <Route.Link
       to=item.path
       key=item.path
-      className="col-span-12 md:col-span-4 xl:col-span-4 xxl:col-span-3 rounded-box overflow-hidden h-24 cursor-pointer">
+      className="col-span-12 md:col-span-4 xl:col-span-4 xxl:col-span-3 rounded-box overflow-hidden h-16 md:h-24 cursor-pointer">
       {item.card()}
     </Route.Link>
   })
@@ -16,7 +16,7 @@ let make = () => {
         <Icon.logo className="fill-accent" />
         {"Landslides"->React.string}
       </p>
-      <p className="text-3xl text-base-content/80">
+      <p className="text-xl md:text-3xl text-base-content/80 text-center">
         {"Collection of Landing pages redesigned using DaisyUI"->React.string}
       </p>
       // <p className="text-5xl text-accent text-center md:hidden p-4">
