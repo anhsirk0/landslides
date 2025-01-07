@@ -13,7 +13,7 @@ html {
 }
 
 #root {
-  @apply center h-screen w-screen min-h-0 transition-all overflow-x-hidden;
+  @apply center h-screen w-screen min-h-0 transitional overflow-x-hidden;
 }
 
 .resp-title {

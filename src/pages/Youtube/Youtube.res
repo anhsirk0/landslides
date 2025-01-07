@@ -72,52 +72,50 @@ let make = () => {
     </div>
   })
 
-  <div className="drawer lg:drawer-open">
+  <div className="drawer lg:drawer-open min-h-0 h-full">
     <input id="yt-drawer" type_="checkbox" className="drawer-toggle" />
-    <div className="drawer-content flex flex-col min-h-0">
-      <div className="sticky top-0">
-        <div className="flex resp-gap items-center px-2 bg-base-100 h-12 lg:h-auto">
-          <div className="flex items-center gap-2 lg:hidden">
-            <label htmlFor="yt-drawer" className="btn btn-square btn-ghost resp-btn drawer-button">
-              <Icon.menu className="resp-icon" />
-            </label>
-            <Icon.youtube className="size-8 lg:size-10 text-primary" weight="fill" />
-            <h1 className="resp-text font-bold"> {"YouTube"->React.string} </h1>
-          </div>
-          <div className="grow" />
-          <div className="hidden lg:flex join items-center self-center py-2 px-4 xxl:px-16 w-1/2">
-            <label
-              id="search"
-              className="input input-bordered input-sm xxl:input-md flex items-center join-item grow">
-              <input placeholder="Search" className="grow" />
-            </label>
-            <button
-              className="btn btn-sm xxl:btn-md join-item no-animation border border-base-content/20">
-              <Icon.magnifyingGlass className="resp-icon" />
-            </button>
-          </div>
-          <div className="flex items-center w-1/4 justify-end">
-            <button className="btn btn-sm xxl:btn-md">
-              <Icon.plus className="resp-icon" />
-              {"Create"->React.string}
-            </button>
-            <button className="btn btn-square btn-ghost resp-btn relative">
-              <Icon.bell className="size-6" />
-              <span
-                className="size-2 xxl:size-3 rounded-full bg-primary absolute right-0.5 top-0 xxl:right-2 xxl:top-2"
+    <div className="drawer-content flex flex-col min-h-0 isolate">
+      <div className="sticky top-0 z-10 flex resp-gap items-center px-2 bg-base-100 h-12 lg:h-auto">
+        <div className="flex items-center gap-2 lg:hidden">
+          <label htmlFor="yt-drawer" className="btn btn-square btn-ghost resp-btn drawer-button">
+            <Icon.menu className="resp-icon" />
+          </label>
+          <Icon.youtube className="size-8 lg:size-10 text-primary" weight="fill" />
+          <h1 className="resp-text font-bold"> {"YouTube"->React.string} </h1>
+        </div>
+        <div className="grow" />
+        <div className="hidden lg:flex join items-center self-center py-2 px-4 xxl:px-16 w-1/2">
+          <label
+            id="search"
+            className="input input-bordered input-sm xxl:input-md flex items-center join-item grow">
+            <input placeholder="Search" className="grow" />
+          </label>
+          <button
+            className="btn btn-sm xxl:btn-md join-item no-animation border border-base-content/20">
+            <Icon.magnifyingGlass className="resp-icon" />
+          </button>
+        </div>
+        <div className="flex items-center w-1/4 justify-end">
+          <button className="btn btn-sm xxl:btn-md">
+            <Icon.plus className="resp-icon" />
+            {"Create"->React.string}
+          </button>
+          <button className="btn btn-square btn-ghost resp-btn relative">
+            <Icon.bell className="size-6" />
+            <span
+              className="size-2 xxl:size-3 rounded-full bg-primary absolute right-0.5 top-0 xxl:right-2 xxl:top-2"
+            />
+          </button>
+          <div className="avatar ml-6 xxl:mr-6">
+            <div className="w-8 xxl:w-12 rounded-full">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
               />
-            </button>
-            <div className="avatar ml-6 xxl:mr-6">
-              <div className="w-8 xxl:w-12 rounded-full">
-                <img
-                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
-                />
-              </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-12 grow w-full min-h-0 overflow-y-auto mt-36">
+      <div className="grid grid-cols-12 w-full grow min-h-0 overflow-y-auto">
         {videos->React.array}
       </div>
     </div>
