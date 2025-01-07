@@ -71,6 +71,15 @@ let twitter: t = props =>
     />
   </svg>
 
+let netflixAlt: t = props =>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" className=?props.className>
+    <defs />
+    <path
+      d="M29 25.75V5l8.4-.5v39L29 43M19 22.25V43l-8.4.5v-39h0L19 5M18.98 5l18.44 38.5M10.58 4.5 29.02 43"
+      style={{fill: "none", stroke: "inherit", strokeLinecap: "round", strokeLinejoin: "round"}}
+    />
+  </svg>
+
 let netflix: t = props =>
   <svg
     className=?props.className
