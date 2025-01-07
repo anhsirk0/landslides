@@ -9,11 +9,10 @@ let make = () => {
       <img
         // alt={"movie-" ++ idx->Int.toString}
         src={`https://picsum.photos/seed/${(idx * 20)->Int.toString}/250/350`}
-        width="250"
-        height="350"
-        className="rounded-box bg-base-200"
+        className="rounded-box bg-base-200 w-[150px] md:w-[250px]"
       />
-      <p className="absolute text-9xl text-neutral font-black bottom-0 left-0 netflix-rating">
+      <p
+        className="absolute text-5xl md:text-9xl text-neutral font-black bottom-0 left-0 netflix-rating">
         {idx->Int.toString->React.string}
       </p>
     </div>
@@ -22,7 +21,7 @@ let make = () => {
   let reasons = Shape.Netflix.Reason.all->Array.map(item => {
     <div
       key=item.title
-      className="card card-compact xxl:card-normal bg-gradient-to-br from-primary/30 to-accent/30 flex-1">
+      className="card card-compact xxl:card-normal bg-gradient-to-br from-primary/30 to-accent/30 md:flex-1">
       <div className="card-body">
         <p className="card-title"> {item.title->React.string} </p>
         <p className="text-xs xl:text-sm xxl:text-base pb-4"> {item.content->React.string} </p>
@@ -37,7 +36,7 @@ let make = () => {
     let answers = item.ans->Array.map(a => <p key={a}> {a->React.string} </p>)
     <div
       key=item.que tabIndex=0 className="collapse collapse-plus border-base-300 bg-base-200 border">
-      <div className="collapse-title text-xl font-medium"> {item.que->React.string} </div>
+      <div className="collapse-title md:text-xl font-medium"> {item.que->React.string} </div>
       <div className="collapse-content">
         <div className="flex flex-col gap-4"> {answers->React.array} </div>
       </div>
@@ -56,18 +55,18 @@ let make = () => {
           </select>
           <button className="btn btn-xs xl:btn-sm btn-primary"> {"Sign In"->React.string} </button>
         </div>
-        <div className="grow center -mt-16 xxl:-mt-32 flex-col gap-6">
-          <p className="text-6xl font-black px-56 text-center">
+        <div className="grow center -mt-16 xxl:-mt-32 flex-col gap-6 px-4">
+          <p className="text-4xl md:text-6xl font-black px-56 text-center">
             {"Unlimited movies, TV shows and more"->React.string}
           </p>
-          <p className="text-2xl font-medium">
+          <p className="text-lg md:text-2xl font-medium text-center">
             {"Watch anywhere. Cancel anytime."->React.string}
           </p>
-          <p className="text-lg font-medium">
+          <p className="text-sm md:text-lg font-medium text-center">
             {"Ready to watch? Enter your email to create or restart your
               membership."->React.string}
           </p>
-          <div className="join w-96">
+          <div className="join md:w-96 mx-auto">
             <input className="input input-bordered join-item grow" placeholder="Email address" />
             <button className="btn btn-primary join-item"> {"Subscribe"->React.string} </button>
           </div>
@@ -82,8 +81,8 @@ let make = () => {
         className="bg-gradient-to-b from-base-100 via-transparent border-t-4 border-primary rounded-t-[200%] absolute top-0 -left-[25%] w-[150%] h-full"
       />
     </div>
-    <div className="flex flex-col pb-40 -mt-36 max-w-7xl mx-auto gap-4">
-      <p className="text-4xl font-black"> {"Trending Now"->React.string} </p>
+    <div className="flex flex-col pb-40 -mt-36 max-w-7xl mx-auto gap-4 px-4">
+      <p className="text-2xl md:text-4xl font-black"> {"Trending Now"->React.string} </p>
       <div className="flex flex-row gap-4">
         <select className="select select-bordered select-xs xl:select-sm xxl:select-md z-10">
           <option> {"India"->React.string} </option>
@@ -94,19 +93,20 @@ let make = () => {
           <option> {"TV-Series"->React.string} </option>
         </select>
       </div>
-      <div className="carousel carousel-center rounded-box w-full space-x-6 p-4 bg-neutral">
+      <div
+        className="carousel carousel-center rounded-box w-full space-x-6 p-4 bg-neutral h-56 md:h-auto">
         {trendings->React.array}
       </div>
-      <p className="text-4xl font-medium mt-8 xxl:mt-12">
+      <p className="text-2xl md:text-4xl font-medium mt-8 xxl:mt-12">
         {"More reasons to join"->React.string}
       </p>
-      <div className="flex flex-row gap-4"> {reasons->React.array} </div>
-      <p className="text-4xl font-medium mt-8 xxl:mt-12">
+      <div className="flex flex-col md:flex-row gap-4"> {reasons->React.array} </div>
+      <p className="text-2xl md:text-4xl font-medium mt-8 xxl:mt-12">
         {"Frequently Asked Questions"->React.string}
       </p>
       <div className="flex flex-col gap-4"> {faqs->React.array} </div>
-      <div className="flex flex-col gap-2 xxl:gap-4 mt-8 xxl:mt-12">
-        <p className="text-lg font-medium text-center">
+      <div className="flex flex-col gap-2 xxl:gap-4 mt-8 xxl:mt-12 px-4">
+        <p className="text-sm md:text-lg font-medium text-center">
           {"Ready to watch? Enter your email to create or restart your membership."->React.string}
         </p>
         <div className="join grow lg:px-20 xxl:px-40">

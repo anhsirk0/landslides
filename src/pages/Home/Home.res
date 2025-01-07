@@ -19,6 +19,9 @@ let make = () => {
       <p className="text-3xl text-base-content/80">
         {"Collection of Landing pages redesigned using DaisyUI"->React.string}
       </p>
+      // <p className="text-5xl text-accent text-center md:hidden p-4">
+      //   {"This site is not optimised for mobile devices"->React.string}
+      // </p>
       <div className="grid grid-cols-12 gap-4 my-12 w-full"> {React.array(routeCards)} </div>
     </div>
   </div>
