@@ -72,13 +72,6 @@ module Netflix = {
 }
 
 module Spotify = {
-  type t = {title: string, icon: Icon.t}
-  let sidelinks: array<t> = [
-    {title: "Spotify", icon: Icon.spotify},
-    {title: "Home", icon: Icon.house},
-    {title: "Search", icon: Icon.magnifyingGlass},
-  ]
-
   let otherlinks: array<array<string>> = [
     ["Legal", "Safety & Privacy Center", "Privacy Policy"],
     ["About Ads", "Accessibility"],
