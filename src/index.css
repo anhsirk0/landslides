@@ -17,6 +17,9 @@
 
 html {
   overflow-x: hidden;
+  font-family:
+    Manrope,
+    Open Sans;
 }
 
 #root {
@@ -54,4 +57,3 @@ html {
 .route-card {
   @apply size-full center p-4 xxl:p-6 text-2xl md:text-3xl font-semibold;
 }
-
