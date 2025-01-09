@@ -1,3 +1,5 @@
+@module("../assets/peter-griffin-post.jpg") external peterPostImg: string = "default"
+
 module Netflix = {
   module Reason = {
     type t = {title: string, content: string, icon: Icon.t}
@@ -105,7 +107,7 @@ module Bluesky = {
       name: "Peter Griffin",
       username: "pumpkineater69",
       text: "I did not care for \"The godfather\".",
-      image: "/src/assets/peter-griffin-post.jpg",
+      image: peterPostImg,
     },
     {name: "Lois Griffin", username: "loisgryffindor", text: "What?"},
     {name: "Chris Griffin", username: "chrissy", text: "What didn't you liked about the movie"},
@@ -113,7 +115,7 @@ module Bluesky = {
       name: "Peter Griffin",
       username: "pumpkineater69",
       text: "\"It insists upon itself\"",
-      image: "/src/assets/peter-griffin-post.jpg",
+      image: peterPostImg,
     },
   ]
 }
