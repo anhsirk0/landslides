@@ -48,13 +48,13 @@ let make = () => {
     <input id="bluesky-drawer" type_="checkbox" className="drawer-toggle" />
     <div className="drawer-content flex flex-row min-h-0 isolate">
       <div
-        className="flex flex-col border-x border-base-content/20 bluesky-content mx-auto min-h-0">
+        className="flex flex-col lg:border-x lg:border-base-content/20 lg:bluesky-content mx-auto min-h-0">
         <div
-          className="sticky top-0 z-10 flex resp-gap items-center px-2 bg-base-100 h-12 lg:hidden">
+          className="sticky top-0 z-10 flex resp-gap items-center p-2 bg-base-100 h-12 lg:hidden">
           <label htmlFor="bluesky-drawer" className="btn btn-square btn-ghost btn-sm lg:hidden">
             <Icon.menu className="size-6" />
           </label>
-          <div className="mx-auto">
+          <div className="mx-auto p-1 h-full">
             <Icon.bluesky className="w-auto h-full fill-primary" />
           </div>
           <div className="size-8" />

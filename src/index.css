@@ -61,11 +61,11 @@ html {
 /* Bluesky specific */
 #bluesky {
   --content-width: 40rem;
-  .bluesky-content {
-    min-width: var(--content-width);
-    width: var(--content-width);
-  }
   @layer utilities {
+    .bluesky-content {
+      min-width: var(--content-width);
+      width: var(--content-width);
+    }
     .bluesky-panel {
       max-width: calc((100vw - var(--content-width)) / 2);
       width: calc((100vw - var(--content-width)) / 2);
