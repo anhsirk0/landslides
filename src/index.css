@@ -57,3 +57,18 @@ html {
 .route-card {
   @apply size-full center p-4 xxl:p-6 text-2xl md:text-3xl font-semibold;
 }
+
+/* Bluesky specific */
+#bluesky {
+  --content-width: 40rem;
+  .bluesky-content {
+    min-width: var(--content-width);
+    width: var(--content-width);
+  }
+  @layer utilities {
+    .bluesky-panel {
+      max-width: calc((100vw - var(--content-width)) / 2);
+      width: calc((100vw - var(--content-width)) / 2);
+    }
+  }
+}

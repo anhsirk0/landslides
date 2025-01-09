@@ -11,7 +11,7 @@ module.exports = {
         sm: "640px",
         md: "768px",
         lg: "1024px",
-        xl: "1380px",
+        xl: "1300px",
         xxl: "1536px",
       },
       backgroundImage: {
@@ -31,6 +31,11 @@ module.exports = {
       animation: {
         grow: "grow 300ms ease-in-out",
         appear: "appear 300ms ease-in-out",
+      },
+      fontFamily: {
+        sans: ["Manrope", "Open Sans"],
+        body: ["Manrope"],
+        display: ["Manrope"],
       },
     },
   },

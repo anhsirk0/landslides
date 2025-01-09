@@ -8,6 +8,7 @@ let make = () => {
     | Spotify => <Spotify />
     | Twitter => <Twitter />
     | Youtube => <Youtube />
+    | Bluesky => <Bluesky />
     | Home => <Home />
     }}
     <OptionsFab />

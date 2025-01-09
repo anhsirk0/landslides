@@ -97,3 +97,23 @@ module Youtube = {
     {title: "Liked Videos", icon: Icon.thumbsUp},
   ]
 }
+
+module Bluesky = {
+  type t = {name: string, username: string, text: string, image?: string}
+  let all: array<t> = [
+    {
+      name: "Peter Griffin",
+      username: "pumpkineater69",
+      text: "I did not care for \"The godfather\".",
+      image: "/src/assets/peter-griffin-post.jpg",
+    },
+    {name: "Lois Griffin", username: "loisgryffindor", text: "What?"},
+    {name: "Chris Griffin", username: "chrissy", text: "What didn't you liked about the movie"},
+    {
+      name: "Peter Griffin",
+      username: "pumpkineater69",
+      text: "\"It insists upon itself\"",
+      image: "/src/assets/peter-griffin-post.jpg",
+    },
+  ]
+}

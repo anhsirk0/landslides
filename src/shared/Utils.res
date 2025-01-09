@@ -25,3 +25,10 @@ let setTheme = theme => {
   open Dom.Storage
   "landslidesTheme"->setItem(theme, localStorage)
 }
+
+let toAvatar = name =>
+  name
+  ->String.split(" ")
+  ->Array.map(s => s->String.charAt(0))
+  ->Array.map(String.toUpperCase)
+  ->Array.join("")
