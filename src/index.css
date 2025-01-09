@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+    font-family: "Manrope";
+    src: local("Manrope"), url("assets/fonts/Manrope/Manrope-Variable.ttf");
+  }
+}
+
 @layer utilities {
   .center {
     @apply flex items-center justify-center;
@@ -45,5 +52,6 @@ html {
 }
 
 .route-card {
-  @apply size-full center p-4 xxl:p-6 text-2xl md:text-3xl font-bold;
+  @apply size-full center p-4 xxl:p-6 text-2xl md:text-3xl font-semibold;
 }
+
