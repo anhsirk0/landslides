@@ -130,13 +130,13 @@ let make = () => {
           <h1 className="resp-text font-bold"> {"YouTube"->React.string} </h1>
         </div>
         <ul className="menu menu-sm xxl:menu-lg"> {sidelinks->React.array} </ul>
-        <div className="divider" />
+        <div className="divider -my-1" />
         <button className="btn btn-ghost resp-btn justify-start -mb-2">
           <p className="ml-2 xxl:ml-4"> {"You"->React.string} </p>
           <Icon.caretRight className="size-4" />
         </button>
         <ul className="menu menu-sm xxl:menu-lg"> {youlinks->React.array} </ul>
-        <div className="divider" />
+        <div className="divider -my-1" />
         <button className="btn btn-ghost resp-btn justify-start -mb-2">
           <p className="ml-2 xxl:ml-4"> {"Subscriptions"->React.string} </p>
         </button>
