@@ -76,7 +76,7 @@ let make = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col min-h-0 overflow-y-auto"> {posts->React.array} </div>
+        <div className="flex flex-col min-h-0 overflow-y-auto pb-20"> {posts->React.array} </div>
       </div>
       <div className="p-4 hidden xl:flex bluesky-panel">
         <flex className="flex-col w-72">
