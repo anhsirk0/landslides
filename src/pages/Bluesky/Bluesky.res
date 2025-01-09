@@ -20,7 +20,7 @@ let make = () => {
         </div>
         <p> {item.text->React.string} </p>
         {switch item.image {
-        | Some(image) => <img className="rounded-box bg-neutral/20 w-full h-[240px]" src=image />
+        | Some(image) => <img className="rounded-box bg-neutral/20 w-full h-auto" src=image />
         | None => React.null
         }}
         <div className="flex flex-row items-center">
