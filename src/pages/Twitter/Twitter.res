@@ -8,30 +8,32 @@ let make = () => {
     </div>
     <div className="center lg:w-1/2 p-4">
       <div className="flex flex-col gap-8 lg:w-4/5">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold">
+        <h1 className="text-4xl md:text-5xl xxl:text-7xl font-bold">
           {"Happening now"->React.string}
         </h1>
         <div className="flex flex-col gap-2 self-start">
-          <p className="text-xl md:text-2xl lg:text-3xl font-bold my-4">
+          <p className="text-xl md:text-2xl xxl:text-3xl font-bold my-4">
             {"Join today."->React.string}
           </p>
-          <button className="btn btn-neutral">
+          <button className="btn resp-btn btn-neutral">
             <Icon.google className="resp-icon" />
             {"Sign up with Google"->React.string}
           </button>
-          <button className="btn btn-neutral">
+          <button className="btn resp-btn btn-neutral">
             <Icon.apple className="resp-icon" />
             {"Sign up with Apple"->React.string}
           </button>
           <div className="divider"> {"or"->React.string} </div>
-          <button className="btn btn-primary"> {"Create account"->React.string} </button>
+          <button className="btn resp-btn btn-primary"> {"Create account"->React.string} </button>
           <p className="text-xs text-base-content/50">
             {"By signing up, you agree to the Terms of Service and Privacy Policy,"->React.string}
             <br />
             {"including Cookie Use."->React.string}
           </p>
-          <p className="md:text-lg mt-20"> {"Already have an account?"->React.string} </p>
-          <button className="btn btn-primary btn-outline"> {"Sign in"->React.string} </button>
+          <p className="xxl:text-lg mt-20"> {"Already have an account?"->React.string} </p>
+          <button className="btn resp-btn btn-primary btn-outline">
+            {"Sign in"->React.string}
+          </button>
         </div>
       </div>
     </div>
