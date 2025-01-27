@@ -74,7 +74,9 @@ let make = () => {
             <button className="btn btn-square btn-neutral hover:text-success">
               <Icon.arrowUp className="resp-icon" />
             </button>
-            <p className="my-auto"> {`${idx->Int.toString}0K`->React.string} </p>
+            <p className="my-auto text-neutral-content">
+              {`${idx->Int.toString}0K`->React.string}
+            </p>
             <button className="btn btn-square btn-neutral hover:text-error">
               <Icon.arrowDown className="resp-icon" />
             </button>
