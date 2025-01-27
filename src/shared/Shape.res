@@ -119,3 +119,13 @@ module Bluesky = {
     },
   ]
 }
+
+module Reddit = {
+  type t = {title: string, icon: Icon.t}
+  let sidelinks: array<t> = [
+    {title: "Home", icon: Icon.house},
+    {title: "Popular", icon: Icon.arrowCircleUpRight},
+    {title: "Explore", icon: Icon.usersThree},
+    {title: "All", icon: Icon.chartBar},
+  ]
+}

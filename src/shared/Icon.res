@@ -1,6 +1,7 @@
 type props = {className?: string, weight?: string}
 type t = React.component<props>
 
+@module("@phosphor-icons/react") external redditLogo: t = "RedditLogo"
 @module("@phosphor-icons/react") external spotify: t = "SpotifyLogo"
 @module("@phosphor-icons/react") external google: t = "GoogleLogo"
 @module("@phosphor-icons/react") external apple: t = "AppleLogo"
@@ -10,7 +11,9 @@ type t = React.component<props>
 @module("@phosphor-icons/react") external caretLeft: t = "CaretLeft"
 @module("@phosphor-icons/react") external caretRight: t = "CaretRight"
 @module("@phosphor-icons/react") external caretDown: t = "CaretDown"
+@module("@phosphor-icons/react") external caretUp: t = "CaretUp"
 @module("@phosphor-icons/react") external arrowDown: t = "ArrowDown"
+@module("@phosphor-icons/react") external arrowUp: t = "ArrowUp"
 @module("@phosphor-icons/react") external television: t = "Television"
 @module("@phosphor-icons/react") external download: t = "CloudArrowDown"
 @module("@phosphor-icons/react") external baby: t = "Baby"
@@ -30,9 +33,16 @@ type t = React.component<props>
 @module("@phosphor-icons/react") external play: t = "Play"
 @module("@phosphor-icons/react") external playlist: t = "Playlist"
 @module("@phosphor-icons/react") external chat: t = "Chat"
+@module("@phosphor-icons/react") external chatCircleDots: t = "ChatCircleDots"
 @module("@phosphor-icons/react") external repeat: t = "Repeat"
 @module("@phosphor-icons/react") external heart: t = "Heart"
 @module("@phosphor-icons/react") external dotsThree: t = "DotsThree"
+@module("@phosphor-icons/react") external arrowCircleUpRight: t = "ArrowCircleUpRight"
+@module("@phosphor-icons/react") external usersThree: t = "UsersThree"
+@module("@phosphor-icons/react") external chartBar: t = "ChartBar"
+@module("@phosphor-icons/react") external star: t = "Star"
+@module("@phosphor-icons/react") external shareFat: t = "ShareFat"
+@module("@phosphor-icons/react") external squareSplitVertical: t = "SquareSplitVertical"
 
 let bluesky: t = props =>
   <svg
