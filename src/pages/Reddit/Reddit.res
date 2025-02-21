@@ -35,7 +35,7 @@ let make = () => {
   })
 
   let posts = Belt.Array.range(1, 12)->Array.map(idx => {
-    <React.Fragment>
+    <React.Fragment key={idx->Int.toString}>
       <div className="divider" />
       <div
         key={idx->Int.toString}
