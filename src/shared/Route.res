@@ -38,11 +38,11 @@ module Link = {
 
 type appRoute = {path: string, card: unit => React.element}
 let appRoutes: array<appRoute> = [
-  {path: "/netflix", card: () => <NetflixCard />},
-  {path: "/spotify", card: () => <SpotifyCard />},
-  {path: "/twitter", card: () => <TwitterCard />},
-  {path: "/youtube", card: () => <YoutubeCard />},
-  {path: "/bluesky", card: () => <BlueskyCard />},
-  {path: "/reddit", card: () => <RedditCard />},
-  {path: "/google", card: () => <GoogleCard />},
+  {path: "/netflix", card: () => <Netflix.Card />},
+  {path: "/spotify", card: () => <Spotify.Card />},
+  {path: "/twitter", card: () => <Twitter.Card />},
+  {path: "/youtube", card: () => <Youtube.Card />},
+  {path: "/bluesky", card: () => <Bluesky.Card />},
+  {path: "/reddit", card: () => <Reddit.Card />},
+  {path: "/google", card: () => <Google.Card />},
 ]
