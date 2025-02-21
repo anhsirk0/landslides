@@ -6,11 +6,12 @@ type t =
   | Youtube
   | Bluesky
   | Reddit
+  | Google
   | ErrorPage
 
 let useRoute: unit => t = () => {
   let url = RescriptReactRouter.useUrl()
-  let _ = Js.log(url)
+
   switch url.path {
   | list{} => Home
   | list{"netflix"} => Netflix
@@ -19,6 +20,7 @@ let useRoute: unit => t = () => {
   | list{"youtube"} => Youtube
   | list{"bluesky"} => Bluesky
   | list{"reddit"} => Reddit
+  | list{"google"} => Google
   | _ => ErrorPage
   }
 }
@@ -42,4 +44,5 @@ let appRoutes: array<appRoute> = [
   {path: "/youtube", card: () => <YoutubeCard />},
   {path: "/bluesky", card: () => <BlueskyCard />},
   {path: "/reddit", card: () => <RedditCard />},
+  {path: "/google", card: () => <GoogleCard />},
 ]

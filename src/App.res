@@ -10,6 +10,7 @@ let make = () => {
     | Youtube => <Youtube />
     | Bluesky => <Bluesky />
     | Reddit => <Reddit />
+    | Google => <Google />
     | Home => <Home />
     | ErrorPage => <ErrorPage />
     }}

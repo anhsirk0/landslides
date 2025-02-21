@@ -1,7 +1,7 @@
 type props = {className?: string, weight?: string}
 type t = React.component<props>
 
-@module("@phosphor-icons/react") external redditLogo: t = "RedditLogo"
+@module("@phosphor-icons/react") external reddit: t = "RedditLogo"
 @module("@phosphor-icons/react") external spotify: t = "SpotifyLogo"
 @module("@phosphor-icons/react") external google: t = "GoogleLogo"
 @module("@phosphor-icons/react") external apple: t = "AppleLogo"
@@ -37,6 +37,7 @@ type t = React.component<props>
 @module("@phosphor-icons/react") external repeat: t = "Repeat"
 @module("@phosphor-icons/react") external heart: t = "Heart"
 @module("@phosphor-icons/react") external dotsThree: t = "DotsThree"
+@module("@phosphor-icons/react") external dotsNine: t = "DotsNine"
 @module("@phosphor-icons/react") external arrowCircleUpRight: t = "ArrowCircleUpRight"
 @module("@phosphor-icons/react") external usersThree: t = "UsersThree"
 @module("@phosphor-icons/react") external chartBar: t = "ChartBar"

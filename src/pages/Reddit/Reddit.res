@@ -100,7 +100,7 @@ let make = () => {
       <div
         className="sticky lg:fixed lg:z-10 lg:inset-0 top-0 h-16 w-full bg-base-100 flex items-center p-2 border-b border-base-content/20">
         <label htmlFor="reddit-drawer" className="btn btn-ghost drawer-button">
-          <Icon.redditLogo className="size-8" />
+          <Icon.reddit className="size-8" />
         </label>
         <p className="hidden lg:block font-black"> {"Reddit"->React.string} </p>
         <div className="grow" />
