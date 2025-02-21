@@ -11,6 +11,7 @@ let make = () => {
     | Bluesky => <Bluesky />
     | Reddit => <Reddit />
     | Home => <Home />
+    | ErrorPage => <ErrorPage />
     }}
     <OptionsFab />
   </React.Fragment>

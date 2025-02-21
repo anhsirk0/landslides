@@ -6,18 +6,20 @@ type t =
   | Youtube
   | Bluesky
   | Reddit
+  | ErrorPage
 
 let useRoute: unit => t = () => {
   let url = RescriptReactRouter.useUrl()
-
+  let _ = Js.log(url)
   switch url.path {
+  | list{} => Home
   | list{"netflix"} => Netflix
   | list{"spotify"} => Spotify
   | list{"twitter"} => Twitter
   | list{"youtube"} => Youtube
   | list{"bluesky"} => Bluesky
   | list{"reddit"} => Reddit
-  | _ => Home
+  | _ => ErrorPage
   }
 }
 
