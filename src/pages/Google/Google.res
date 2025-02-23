@@ -10,6 +10,8 @@ module Card = {
 
 @react.component
 let make = () => {
+  Hook.useDocTitle("Google")
+
   <div className="size-full center relative p-4">
     <div className="flex gap-4 absolute top-2 left-4 items-center h-12">
       <button className="link link-hover"> {"About"->React.string} </button>
