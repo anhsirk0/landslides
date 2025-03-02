@@ -7,6 +7,7 @@ type t =
   | Bluesky
   | Reddit
   | Google
+  | Linkedin
   | ErrorPage
 
 let useRoute: unit => t = () => {
@@ -21,6 +22,7 @@ let useRoute: unit => t = () => {
   | list{"bluesky"} => Bluesky
   | list{"reddit"} => Reddit
   | list{"google"} => Google
+  | list{"linkedin"} => Linkedin
   | _ => ErrorPage
   }
 }
@@ -45,4 +47,5 @@ let appRoutes: array<appRoute> = [
   {path: "/bluesky", card: () => <Bluesky.Card />},
   {path: "/reddit", card: () => <Reddit.Card />},
   {path: "/google", card: () => <Google.Card />},
+  {path: "/linkedin", card: () => <Linkedin.Card />},
 ]

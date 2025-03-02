@@ -4,6 +4,7 @@ let make = () => {
 
   <React.Fragment>
     {switch route {
+    | Home => <Home />
     | Netflix => <Netflix />
     | Spotify => <Spotify />
     | Twitter => <Twitter />
@@ -11,7 +12,7 @@ let make = () => {
     | Bluesky => <Bluesky />
     | Reddit => <Reddit />
     | Google => <Google />
-    | Home => <Home />
+    | Linkedin => <Linkedin />
     | ErrorPage => <ErrorPage />
     }}
     <OptionsFab />

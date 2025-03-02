@@ -4,6 +4,7 @@ type t = React.component<props>
 @module("@phosphor-icons/react") external reddit: t = "RedditLogo"
 @module("@phosphor-icons/react") external spotify: t = "SpotifyLogo"
 @module("@phosphor-icons/react") external google: t = "GoogleLogo"
+@module("@phosphor-icons/react") external linkedin: t = "LinkedinLogo"
 @module("@phosphor-icons/react") external apple: t = "AppleLogo"
 @module("@phosphor-icons/react") external youtube: t = "YoutubeLogo"
 @module("@phosphor-icons/react") external palette: t = "Palette"
@@ -40,10 +41,20 @@ type t = React.component<props>
 @module("@phosphor-icons/react") external dotsNine: t = "DotsNine"
 @module("@phosphor-icons/react") external arrowCircleUpRight: t = "ArrowCircleUpRight"
 @module("@phosphor-icons/react") external usersThree: t = "UsersThree"
+@module("@phosphor-icons/react") external usersFour: t = "UsersFour"
 @module("@phosphor-icons/react") external chartBar: t = "ChartBar"
 @module("@phosphor-icons/react") external star: t = "Star"
 @module("@phosphor-icons/react") external shareFat: t = "ShareFat"
 @module("@phosphor-icons/react") external squareSplitVertical: t = "SquareSplitVertical"
+@module("@phosphor-icons/react") external suitcaseSimple: t = "SuitcaseSimple"
+@module("@phosphor-icons/react") external image: t = "Image"
+@module("@phosphor-icons/react") external articleMedium: t = "ArticleMedium"
+@module("@phosphor-icons/react") external chatTeardropText: t = "ChatTeardropText"
+@module("@phosphor-icons/react") external gridFour: t = "GridFour"
+@module("@phosphor-icons/react") external x: t = "X"
+@module("@phosphor-icons/react") external handHeart: t = "HandHeart"
+@module("@phosphor-icons/react") external handsClapping: t = "HandsClapping"
+@module("@phosphor-icons/react") external paperPlaneTilt: t = "PaperPlaneTilt"
 
 let bluesky: t = props =>
   <svg

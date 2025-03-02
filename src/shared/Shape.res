@@ -3,7 +3,7 @@
 module Netflix = {
   module Reason = {
     type t = {title: string, content: string, icon: Icon.t}
-    let all: array<t> = [
+    let all = [
       {
         title: "Enjoy on your TV",
         icon: Icon.television,
@@ -29,7 +29,7 @@ module Netflix = {
 
   module Faq = {
     type t = {que: string, ans: array<string>}
-    let all: array<t> = [
+    let all = [
       {
         que: "What is Netflix?",
         ans: [
@@ -74,24 +74,24 @@ module Netflix = {
 }
 
 module Spotify = {
-  let otherlinks: array<array<string>> = [
+  let otherlinks = [
     ["Legal", "Safety & Privacy Center", "Privacy Policy"],
     ["About Ads", "Accessibility"],
     ["Cookies"],
   ]
 
-  let categories: array<string> = ["artists", "albums", "radio"]
+  let categories = ["artists", "albums", "radio"]
 }
 
 module Youtube = {
   type t = {title: string, icon: Icon.t}
-  let sidelinks: array<t> = [
+  let sidelinks = [
     {title: "Home", icon: Icon.house},
     {title: "Shorts", icon: Icon.ytshorts},
     {title: "Subscriptions", icon: Icon.ytsubscription},
     // {title: "You", icon: Icon.userCircle},
   ]
-  let youlinks: array<t> = [
+  let youlinks = [
     {title: "History", icon: Icon.history},
     {title: "Playlists", icon: Icon.playlist},
     {title: "Your Videos", icon: Icon.video},
@@ -102,7 +102,7 @@ module Youtube = {
 
 module Bluesky = {
   type t = {name: string, username: string, text: string, image?: string}
-  let all: array<t> = [
+  let all = [
     {
       name: "Peter Griffin",
       username: "pumpkineater69",
@@ -122,10 +122,58 @@ module Bluesky = {
 
 module Reddit = {
   type t = {title: string, icon: Icon.t}
-  let sidelinks: array<t> = [
+  let sidelinks = [
     {title: "Home", icon: Icon.house},
     {title: "Popular", icon: Icon.arrowCircleUpRight},
     {title: "Explore", icon: Icon.usersThree},
     {title: "All", icon: Icon.chartBar},
+  ]
+}
+
+module Linkedin = {
+  type t = {title: string, icon: Icon.t}
+  let navlinks = [
+    {title: "Home", icon: Icon.house},
+    {title: "My Network", icon: Icon.usersThree},
+    {title: "Jobs", icon: Icon.suitcaseSimple},
+    {title: "Messaging", icon: Icon.chat},
+    {title: "Notifications", icon: Icon.bell},
+    {title: "Me", icon: Icon.userCircle},
+  ]
+
+  let trendings = [
+    "Some key takeaways by some Project manager",
+    "AI related mildly interesting post",
+    "more AI related mildly interesting post",
+    "ever more AI related mildly interesting post",
+  ]
+
+  type post = {
+    title: string,
+    author: string,
+    authorInfo: string,
+  }
+
+  let posts = [
+    {
+      title: "Key take aways from some random thing by some manager.",
+      author: "Project Man the 8th",
+      authorInfo: "Leader for life | Leader of leaders | MBA, MCA, MDA",
+    },
+    {
+      title: "What I learned after getting fired - Nothing.",
+      author: "Junior Tech Influencer",
+      authorInfo: "AI Enthusiast | Content Creator | Crypto Bro",
+    },
+    {
+      title: "Top 100 tricky/mysterious/nonsense javascript interview questions.",
+      author: "Some HR prolly",
+      authorInfo: "Rejecting talent since 1999",
+    },
+    {
+      title: "Here are 5000+ Interview question to help you prepare.",
+      author: "Sir NoCode Jr",
+      authorInfo: "LinkedIn Growth Expert | Tech Leader | Tech influencer",
+    },
   ]
 }
